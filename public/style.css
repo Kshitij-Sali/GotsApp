@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 40px;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #dceaad;
+}
+section.chatSection {
+    width: 800px;
+    max-width: 90%;  
+    background-image: url('background.jpeg');
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+.top {
+    display: flex;
+}
+.name {
+    width: 70%;
+    padding: 10px;
+    background: #ffffe4;
+    display: flex;
+    align-items: center;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.name .contact {
+    height: 50px;
+    width: 50px;
+    margin-left: 1rem;
+    width: auto;
+}
+.name h3 {
+    margin-left: 10px;
+}
+.brand {
+    width: 30%;
+    padding: 10px;
+    padding-left: 2rem;
+    top: 0;
+    background: #ffffe4;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.brand img {
+    height: 50px;
+    width: 50px;
+    justify-content: end;
+}
+.brand h1 {
+    font-size: 1.3rem;
+    color: #444;
+    justify-content: end;
+}
+.messageArea{
+    height: 500px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding-top: 40px;
+    border-radius: 1px;
+}
+.typeMessage {
+    display: flex;
+    margin-bottom: 1rem;
+}
+textArea {
+    width: 80%;
+    border: none;
+    margin-left: 4.3%;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 16px;
+    outline: none;
+    background: #ffffe4;
+    resize: none;
+}
+.sendButton {
+    width: 8%;
+    margin: 2% 1% 1.5% 3%;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    background: #63b93f;
+}
+.sendButton img {
+    height: 2rem;
+    width: 2rem;
+    margin-left: 0.2rem;
+}
+.sendButton:active {
+    background-color: #4d9a2c;
+    transform: scale(0.95);
+    box-shadow: 0 0 4px black;
+}
+.message {
+    word-break: break-word;
+    overflow-wrap: break-word;
+    padding: 20px; 
+    border-radius: 4px; 
+    margin-bottom: 40px;
+    max-height: auto;
+    max-width: 55%; 
+    position: relative;
+}
+.incoming {
+    background: #fff;
+    color: #597240;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-right: auto;
+}
+.outgoing {
+    background: #597240;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-left: auto;
+}
+@media (max-width: 700px) {
+    .brand h1 {
+        display: none;
+    }
+}
+@media (max-width: 300px) {
+    .brand img {
+        display: none;
+    }
+}
+@media (max-width: 500px) {
+    .sendButton {
+        width: 10%;
+    }
+    .sendButton img {
+        height: 70%;
+        width: 80%;
+    }
+}
