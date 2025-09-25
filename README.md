@@ -1,2 +1,3 @@
 # GotsApp
-GotsApp is the live chat application
+
+GotsApp is the real time chatting application
